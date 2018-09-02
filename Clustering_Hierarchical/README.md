@@ -28,8 +28,6 @@ Two type of Hierarchical Clustering.
 ## Screenshot</br>
 <img src="images/Hierarchical Clustering 2018-09-02 15-13-31.png">
 
-## Data Story:
-This data is 2010 census data. After clustering using Hierarchical we plotted data which clearly shows most of the population lies around 35 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 40 for 20K population, ~age of 38 for next 30K population, ~age of 35 for 50K.
 ## Code: Hierarchical Clustering.ipynb
 ```
 # Hierarchical Clustering
@@ -72,6 +70,12 @@ y_hc = hc.fit_predict(X)
 # Scatter chart of the clusters
 plt.scatter(X[:, 0], X[:, 1], c=y_hc, s=40, cmap='viridis');
 ```
+## Data Story:
+This data is 2010 census data. After clustering using Hierarchical we plotted data which clearly shows most of the population lies around 35 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 40 for 20K population, ~age of 38 for next 30K population, ~age of 35 for 50K.
 
+## Reference:
+[Python Data Science Handbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)
+
+[Hierarchical Clustering](http://www.google.com/url?q=http%3A%2F%2Fwww.econ.upf.edu%2F~michael%2Fstanford%2Fmaeb7.pdf&sa=D&sntz=1&usg=AFQjCNE07AuJ6qYl5ZFyRX7C0RPOlYyFiA)
 ## Thank You
 

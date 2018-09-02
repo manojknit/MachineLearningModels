@@ -18,10 +18,7 @@ https://catalog.data.gov/dataset/2010-census-populations-by-zip-code
 ## Screenshot</br>
 <img src="images/GaussianMixtureModel Clustering 2018-09-02 14-55-22.png">
 
-## Data Story:
-This data is 2010 census data. After clustering using GMM we plotted data which clearly shows most of the population lies around 38 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 40 for 20K population, ~age of 39 for next 18K population, ~age of 38 for 18K, ~age of 36 for 24K and age of 32 for 34K.
-
-## Code: ViewController.swift
+## Code: GaussianMixtureModel Clustering.ipynb
 ```
 # GMM Clustering
 
@@ -55,6 +52,11 @@ labels = gmm.predict(X)
 # Scatter chart of the clusters
 plt.scatter(X[:, 0], X[:, 1], c=labels, s=40, cmap='viridis');
 ```
+## Data Story:
+This data is 2010 census data. After clustering using GMM we plotted data which clearly shows most of the population lies around 38 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 45 for 5K population, ~age of 38 for next 45K population, ~age of 36 for 20K, and age of 35 for 30K.
+
+## Reference:
+[Python Data Science Handbook - Gaussian Mixture Model](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.12-Gaussian-Mixtures.ipynb)
 
 ## Thank You
 

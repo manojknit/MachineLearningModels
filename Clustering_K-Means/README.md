@@ -22,9 +22,8 @@ https://catalog.data.gov/dataset/2010-census-populations-by-zip-code
 <img src="images/K-Means Clustering 2018-08-25 03-01-14.png">
 
 ## Data Story:
-This data is 2010 census data. After clustering using K-Means we plotted data which clearly shows most of the population lies around 38 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 40 for 20K population, ~age of 39 for next 18K population, ~age of 38 for 18K, ~age of 36 for 24K and age of 32 for 34K.
-
-## Code: ViewController.swift
+This data is 2010 census data. After clustering using K-Means we plotted data which clearly shows most of the population lies around 38 of median age. As population grows median ages is also changing and its coming down. This model gives idea, if business need to manufacture products according to ~age of 40 for 20K population, ~age of 38 for next 21K population, ~age of 37 for 39K, ~age of 36 for 24K and age of 30 for 34K.
+## Code: K-Means Clustering.ipynb
 ```
 # K-Means Clustering
 
@@ -71,7 +70,7 @@ plt.scatter(X[y_kmeans == 0, 0], X[y_kmeans == 0, 1], s = 50, c = 'gold', label 
 plt.scatter(X[y_kmeans == 1, 0], X[y_kmeans == 1, 1], s = 50, c = 'skyblue', label = 'Cluster B')
 plt.scatter(X[y_kmeans == 2, 0], X[y_kmeans == 2, 1], s = 50, c = 'orchid', label = 'Cluster C')
 plt.scatter(X[y_kmeans == 3, 0], X[y_kmeans == 3, 1], s = 50, c = 'mediumspringgreen', label = 'Cluster D')
-plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 50, c = 'c', label = 'Cluster E')
+#plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 50, c = 'c', label = 'Cluster E')
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 200, c = 'red', label = 'Centroids')
 plt.title('Clusters of Population')
 plt.xlabel('Total Population')
@@ -79,6 +78,8 @@ plt.ylabel('Median Age')
 plt.legend()
 plt.show()
 ```
+## Reference:
+[Python Data Science Handbook - K-Means](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.11-K-Means.ipynb)
 
 ## Thank You
 
