@@ -16,6 +16,7 @@ https://catalog.data.gov/dataset/2010-census-populations-by-zip-code
 1.	A Gaussian mixture model (GMM) attempts to find a mixture of multi-dimensional Gaussian probability distributions that best model any input dataset.
 
 ## Screenshot</br>
+<img src="images/clusters.png">
 <img src="images/GaussianMixtureModel Clustering 2018-09-02 14-55-22.png">
 
 ## Code: GaussianMixtureModel Clustering.ipynb
