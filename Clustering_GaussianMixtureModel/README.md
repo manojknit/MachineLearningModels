@@ -1,6 +1,6 @@
 # Machine Learning Python Python Gaussian Mixture Model Clustering Clustering
 
-This example explains k-means clustering with Python 3, pandas and scikit-learn on Jupyter Notebook.
+This example explains Gaussian Mixture Model clustering with Python 3, pandas and scikit-learn on Jupyter Notebook.
 ## Requirements
 To use this example you need Python 3 and latest versions of pandas and scikit-learn. I used Anaconda distribution to install.
 
