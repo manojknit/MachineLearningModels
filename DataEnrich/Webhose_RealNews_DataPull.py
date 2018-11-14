@@ -18,11 +18,11 @@ directory = os.fsencode(directory_in_str)
 
 count = 0
 
-with open('/Users/mk194903/Desktop/Projects/ML/ML_Team_Project/dataprep/csv/NewsRealData1.tsv', 'w+') as news_tsv:
+with open('/Users/mk194903/Desktop/Projects/ML/ML_Team_Project/dataprep/csv/NewsRealData2.tsv', 'w+') as news_tsv:
     news_tsv.write('uuid' + "\t" + 'ord_in_thread' + "\t" + 'author' + "\t" + 'published' + "\t" + 'title' + "\t" + 'text' + "\t" + 'language' + "\t" + 'crawled' + "\t" + 'site_url' + "\t" + 'country' + "\t" + 'domain_rank' + "\t" + 'thread_title' + "\t" + 'spam_score' + "\t" + 'main_img_url' + "\t" + 'replies_count' + "\t" + 'participants_count' + "\t" + 'likes' + "\t" + 'comments' + "\t" + 'shares' + "\t" + 'type' + "\n")
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
-        if filename.endswith(".json"): 
+        if (filename.endswith(".json") and count < 2000): # 2000 rows only
             filepath = directory_in_str +'/'+ filename;
             
             with open(filepath) as data_file:
@@ -38,7 +38,7 @@ with open('/Users/mk194903/Desktop/Projects/ML/ML_Team_Project/dataprep/csv/News
                 title = (data_item['title'])
                 title = title.replace('\t', ' ').replace('\n',' ')
                 
-                text = ''#(data_item['text'])
+                text = (data_item['text'].replace('\t', ' ').replace('\n',' '))
                 language = (data_item['language'])
                 crawled = (data_item['crawled'])
                 site_url = (data_item['thread']['site_full'])
@@ -57,7 +57,6 @@ with open('/Users/mk194903/Desktop/Projects/ML/ML_Team_Project/dataprep/csv/News
                 count = count +1
                 print('files progress - '+str(count))
                 #news_tsv.write(l[1] + "\t" + l[2] + "\t" + l[3] + "\t" + l[4] + "\t" + l[5] + "\n")
-    
                 
                 
                 # print(os.path.join(directory, filename))
