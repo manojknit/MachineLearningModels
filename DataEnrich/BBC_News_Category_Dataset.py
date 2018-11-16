@@ -24,12 +24,13 @@ for i in folders_categories:
         print("reading file:", file_path)
         with open(file_path) as f:
             data = f.readlines()
+            #data = data[1:]
         data = ' '.join(data)
         data = data.encode('utf-8').strip()
         x.append(data)
         y.append(i)
    
-data = {'news': x, 'type': y}       
+data = {'news': x, 'category': y}       
 df = pd.DataFrame(data)
 print('writing to csv ...')
 df.to_csv('bbc-news-dataset.csv')
