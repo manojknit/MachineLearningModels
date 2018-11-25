@@ -2331,3 +2331,5 @@ dataset/bbc-news/tech/400.txt
 dataset/bbc-news/tech/401.txt
 dataset/jigsaw-toxic-comment-classification-challenge/test.csv
 dataset/jigsaw-toxic-comment-classification-challenge/train.csv
+dataset/glove.6B/glove.6B.50d.txt
+images/main-qimg-ee5c644cf646c720a0961241b80a9b7c.png
