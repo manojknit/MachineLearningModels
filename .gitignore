@@ -2333,3 +2333,5 @@ dataset/jigsaw-toxic-comment-classification-challenge/test.csv
 dataset/jigsaw-toxic-comment-classification-challenge/train.csv
 dataset/glove.6B/glove.6B.50d.txt
 images/main-qimg-ee5c644cf646c720a0961241b80a9b7c.png
+dataset/critical-assessment-amazon-reviews-on-kindle/1429_1.csv
+dataset/critical-assessment-amazon-reviews-on-kindle/Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv
